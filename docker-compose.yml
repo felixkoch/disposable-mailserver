@@ -4,3 +4,5 @@ services:
     build: .
     volumes:
        - ./home:/home
+    env_file:
+    - .env   
