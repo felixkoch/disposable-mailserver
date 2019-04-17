@@ -10,9 +10,8 @@ if [ -n "$MAILNAME" ]; then
     echo $MAILNAME > /etc/mailname;
 fi
 
-if [ -n "$HOSTNAME" ]; then
-    postconf -e myhostname=$HOSTNAME
-fi
+
+postconf -e myhostname=$HOSTNAME
 
 service postfix start
 service dovecot start
