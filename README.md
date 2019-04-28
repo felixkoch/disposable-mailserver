@@ -1,7 +1,6 @@
 # Disposable Mailserver
 
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/felixfkoch/disposable-mailserver.svg)
-![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/felixfkoch/disposable-mailserver.svg)
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/felixfkoch/disposable-mailserver.svg)](https://hub.docker.com/r/felixfkoch/disposable-mailserver)
 
 Optional Environment variables:
 - MAILNAME: Origin- and Destination-Domain, e.g. example.com
