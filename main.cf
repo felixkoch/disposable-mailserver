@@ -42,7 +42,7 @@ recipient_delimiter = +
 inet_interfaces = all
 inet_protocols = all
 
-#home_mailbox = Maildir/
+home_mailbox = Maildir/
 
 smtpd_sasl_type = dovecot
 smtpd_sasl_path = private/auth

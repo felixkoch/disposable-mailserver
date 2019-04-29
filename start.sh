@@ -12,7 +12,7 @@ fi
 
 
 postconf -e myhostname=$HOSTNAME
-
+service rsyslog start
 service postfix start
 service dovecot start
 tail -f /dev/null
