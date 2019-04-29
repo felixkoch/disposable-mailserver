@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
-    apt-get -y install postfix dovecot-imapd rsyslogd
+    apt-get -y install postfix dovecot-imapd rsyslog
 
 COPY main.cf /etc/postfix/main.cf
 COPY 10-master.conf /etc/dovecot/conf.d/10-master.conf
