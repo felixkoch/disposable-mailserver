@@ -1,5 +1,4 @@
 #!/bin/bash
-HOSTNAME="$(hostname -f)"
 
 if [ -n "$USER" ] && [ -n "$PASSWORD" ]; then
     adduser --disabled-password --gecos "" --shell=/bin/false $USER
@@ -8,10 +7,9 @@ fi
 
 if [ -n "$MAILNAME" ]; then
     echo $MAILNAME > /etc/mailname;
+    postconf -e myhostname=$MAILNAME
 fi
 
-
-postconf -e myhostname=$HOSTNAME
 service rsyslog start
 service postfix start
 service dovecot start
