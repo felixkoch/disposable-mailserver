@@ -2,6 +2,7 @@ version: "3"
 services:
   server:
     build: .
+    container_name: disposable-mailserver
     volumes:
        - ./home:/home
     env_file:
