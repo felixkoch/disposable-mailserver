@@ -8,5 +8,5 @@ Optional Environment variables:
 - PASSWORD: SMTP & IMAP password for USER
 
 You may overwrite the default cert and key files for postfix and dovecot by overwriting both files with bind mounts:
-/etc/ssl/certs/ssl-cert-snakeoil.pem
-/etc/ssl/private/ssl-cert-snakeoil.key
+- /etc/ssl/certs/ssl-cert-snakeoil.pem
+- /etc/ssl/private/ssl-cert-snakeoil.key
